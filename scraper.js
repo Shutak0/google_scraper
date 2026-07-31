@@ -12,7 +12,7 @@ async function scrapeGoogle(query) {
   // === Google via SerpAPI ===
   const google = await trySerpApi(query);
   if (google && google.length > 0) {
-    console.log(`SerpAPI (Google): ${google.length} результатов`);
+    console.log(`SerpAPI (Google): ${google.length} results`);
     return google;
   }
 
